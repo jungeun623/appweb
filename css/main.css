@@ -1,7 +1,7 @@
 @charset "uft-8";
 *{
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 .header{
@@ -14,17 +14,21 @@
     padding: 20px 30px;
     float: left;
 }
-/*  */
+/* 상단 */
 .menu{
     display: flex;
     padding: 10px;
+    list-style: none;
 }
-.menu ul li{
-    padding: 10px;
+.header .menu ul li{
+    padding: 0px 10px;
 }
 .login{
-    float: right;
+    list-style: none;
+    display: flex;
 }
+
+/* 배너 슬라이드 */
 .slide ul li img{
     width: 100%;
     height: 300px;
@@ -36,12 +40,19 @@
     text-align: center;
     background-color: burlywood;
 }
+.brand h{
+    text-align: center;
+}
 .brand img{
     width: 150px;
     height: 150px;
     left: 50%;
     right: 50%;
 }
+.brand li{
+    
+}
+
 /* 메뉴 */
 .section{
     width: 100%;
