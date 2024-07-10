@@ -51,5 +51,5 @@
     float: left;
 }
 .section img{
-    right: 50%;
+    translate: (-50% , -50%);
 }
