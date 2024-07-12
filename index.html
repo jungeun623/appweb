@@ -1,113 +1,134 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO 적용 -->
     <meta name="description" content="더리터 공식홈페이지" />
     <meta name="keywords" content="카페,커피,테이크아웃,아메리카노,테이크아웃점,커피포장" />
     <meta property="og:title" content="더리터" />
     <meta property="og:description" content="카페,커피,테이크아웃,아메리카노,테이크아웃점,커피포장" />
-    <meta property="og:image" content="http://127.0.0.1:5500/img/logo.svg" />
-    <meta property="og:url" content="https://theliter.net" />
+    <meta property="og:image" content="https://jungeun623.github.io/appweb/img/logo.svg" />
+    <meta property="og:url" content="https://jungeun623.github.io/appweb/" />
     <meta property="og:site_name" content="더리터" />
     <meta property="og:type" content="website" />
     <!-- 파비콘 적용 -->
-     
+    <!-- css적용 -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <!-- jsw적용 -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <title>더리터</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+  </head>
+  <body>
     <!-- 전체 -->
     <div class="wrap">
-        <!-- 상단 -->
-        <header class="header">
-            <a href="#"><img src="img/logo.svg" alt="로고"></a>
-            <ul class="menu">
-                <li>THE LITER</li>
-                <li>MENU</li>
-                <li>FRANCHISE</li>
-                <li>STORE</li>
-                <li>THE NEWS</li>
-            </ul>
-            <ul class="login">
-                <li>로그인</li>
-                <li>회원가입</li>
-            </ul>
-        </header>
-        <!-- 배너 슬라이드 -->
-        <div class="slide">
-           <ul>
-            <li><a href="#"><img src="img/baner.png" alt="배너1"></a></li>
-            <li><a href="#"><img src="img/baner2.png" alt="배너2"></a></li>
-            <li><a href="#"><img src="img/baner3.png" alt="배너3"></a></li>
-            <li><a href="#"><img src="img/baner4.png" alt="배너4"></a></li>
-           </ul>
+      <!-- 상단 -->
+      <header class="header">
+        <a href="#"><img src="img/logo.svg" alt="로고" /></a>
+        <ul class="menu">
+          <li>THE LITER</li>
+          <li>MENU</li>
+          <li>FRANCHISE</li>
+          <li>STORE</li>
+          <li>THE NEWS</li>
+        </ul>
+        <ul class="login">
+          <li>로그인</li>
+          <li>회원가입</li>
+        </ul>
+      </header>
+      <!-- 배너 슬라이드 -->
+      <!-- navigation -->
+      <!-- 이미지 스와이퍼 -->
+      <div class="swiper sw-promotion">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/baner.png" alt="배너1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/baner2.png" alt="배너2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/baner3.png" alt="배너3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/baner4.png" alt="배너4" />
+            </a>
+          </div>
         </div>
-        <!-- 브랜드 -->
-        <div class="brand">
-            <h3>Brand</h3>
-            <h5>넉넉한 용량,합리적인 가격,우수한 품질의 착한 음료 국민커피전문점 브랜드 입니다.</h5>
-            <ul>
-                <li><a href="#"><img src="img/cup1.png" alt="이미지1"> </a></li>
-                <li><a href="#"><img src="img/cup2.png" alt="이미지1"> </a></li>
-                <li><a href="#"><img src="img/cup3.png" alt="이미지1"> </a></li>
-            </ul>
+      </div>
+      <!-- 브랜드 -->
+      <div class="brand">
+        <h3>Brand</h3>
+        <h5>넉넉한 용량,합리적인 가격,우수한 품질의 착한 음료 국민커피전문점 브랜드 입니다.</h5>
+        <ul>
+          <li>
+            <a href="#"><img src="img/cup1.png" alt="이미지1" /> </a>
+          </li>
+          <li>
+            <a href="#"><img src="img/cup2.png" alt="이미지1" /> </a>
+          </li>
+          <li>
+            <a href="#"><img src="img/cup3.png" alt="이미지1" /> </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 메뉴(섹션) -->
+      <div class="section">
+        <h2>MENU</h2>
+        <h5>엄선된 원두에서 주출한 스페셜티 커피와 다양한 음료를 언제 어디서나 즐겨보세요.</h5>
+        <img src="img/menu.jpg" alt="메뉴" />
+      </div>
+      <!-- 공지사항 -->
+      <div class="notice">
+        <h4>공지사항</h4>
+        <div class="box">[신메뉴] 2024년 봄 신메뉴 딸기 음료 2종 출시!</div>
+        <div class="box">2024년 더리터 메뉴개편 및 가격 변경 안내</div>
+        <div class="box">[신메뉴] 더리터X기라델리 음료 4종 출시!</div>
+      </div>
+      <!-- 수상메달 -->
+      <div class="img-box">
+        <img src="img/medal.png" alt="메달1" />
+        <img src="img/medla2.png" alt="메달2" />
+      </div>
+      <!-- 사무실 위치 -->
+      <div class="map">
+        <!-- map 왼쪽 -->
+        <div class="map-left">
+          <img src="img/logo02-1.png" alt="로고" />
+          <img src="img/logo-light.png" alt="로고2" />
         </div>
-        <!-- 메뉴(섹션) -->
-        <div class="section">
-            <h2>MENU</h2>
-            <h5>엄선된 원두에서 주출한 스페셜티 커피와
-            다양한 음료를 언제 어디서나 즐겨보세요.</h5>
-            <img src="img/menu.jpg" alt="메뉴">
+        <!-- map 중간 -->
+        <div class="map-center">
+          <p>면책공고</p>
+          <p>개인정보취급방침</p>
+          <p>이용약관</p>
+          <span>본사 부산광역시 부산진구 중아앧로 950 한상타워 8층 주식회사 희천 TEL. 1670-7782 Fax. 051-000-0000 </span>
         </div>
-        <!-- 공지사항 -->
-        <div class="notice">
-            <h4>공지사항</h4>
-                <div class="box">
-                [신메뉴] 2024년 봄 신메뉴 딸기 음료 2종 출시!
-                </div>
-                <div class="box">
-                2024년 더리터 메뉴개편 및 가격 변경 안내
-                </div>
-                <div class="box">
-                [신메뉴] 더리터X기라델리 음료 4종 출시!
-                </div>
+        <!-- map 오른쪽 -->
+        <div class="right">
+          <ul>
+            <li><i class="fa-solid fa-square-phone"></i></li>
+            <li><h2>1670-7762</h2></li>
+            <li>평일 09시~16시</li>
+            <li>점심시간 12:30~13:30</li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-square-facebook"></i></li>
+          </ul>
         </div>
-        <!-- 수상메달 -->
-         <div class="img-box">
-            <img src="img/medal.png" alt="메달1">
-            <img src="img/medla2.png" alt="메달2">
-         </div>
-        <!-- 사무실 위치 -->
-         <div class="map">
-            <!-- map 왼쪽 -->
-             <div class="map-left">
-                <img src="img/logo02-1.png" alt="로고">
-                <img src="img/logo-light.png" alt="로고2">
-             </div>
-            <!-- map 중간 -->
-            <div class="map-center">
-                <p>면책공고</p>
-                <p>개인정보취급방침</p>
-                <p>이용약관</p>
-                <span>본사 부산광역시 부산진구 중아앧로 950 한상타워 8층 주식회사 희천
-                    TEL. 1670-7782
-                    Fax. 051-000-0000
-                </span>
-            </div>
-            <!-- map 오른쪽 -->
-            <div class="right">
-                <ul>
-                    <li><i class="fa-solid fa-square-phone"></i></li>
-                    <li><h2>1670-7762</h2></li>
-                    <li>평일 09시~16시</li>
-                    <li>점심시간 12:30~13:30</li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-square-facebook"></i></li>
-                </ul>
-            </div>
-         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
