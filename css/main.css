@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-
   list-style: none;
 }
 .header {
@@ -21,7 +20,6 @@
 .header img {
   width: 100%;
   padding: 10px;
-  /* float: left; */
 }
 /* 상단 */
 .menu {
@@ -57,29 +55,58 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: burlywood;
-}
-.brand h {
-  text-align: center;
+  padding: 50px ;
+  background-color: rgb(247, 225, 255);
+  display: block;
 }
 .brand img {
+  margin: 10px;
   width: 150px;
   height: 150px;
   left: 50%;
   right: 50%;
 }
-.brand li {
-}
-
 /* 메뉴 */
 .section {
   width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.section a {
+  width: 100%;
+}
+.section a img {
   height: 100%;
+  left: 50%;
+  right: 50%;
 }
-.section h2,
-h5 {
-  float: left;
+/* 공지사항 */
+.notice{
+  width: 100%;
+  height: 100%;
+  background-color: darkgoldenrod;
+  text-align: center;
+  display: block;
+  padding: 20px;
 }
-.section img {
-  translate: (-50%, -50%);
+.box{
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #eee;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px;
+  display: inline-flex;
+}
+/* 수상메달 */
+.img-box{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  translate: (-50% , -50%);
+}
+.img-box img{
+  width: 50%;
+  height: 50%;
 }
