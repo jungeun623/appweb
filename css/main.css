@@ -5,6 +5,9 @@
   box-sizing: border-box;
   list-style: none;
 }
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
 .header {
   display: flex;
   align-items: center;
@@ -55,7 +58,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 50px ;
+  padding: 50px;
   background-color: rgb(247, 225, 255);
   display: block;
 }
@@ -82,15 +85,15 @@
   right: 50%;
 }
 /* 공지사항 */
-.notice{
+.notice {
   width: 100%;
   height: 100%;
-  background-color: darkgoldenrod;
+  background-color: rgb(211, 211, 211);
   text-align: center;
   display: block;
   padding: 20px;
 }
-.box{
+.box {
   text-align: center;
   background-color: #eee;
   border: 1px solid #eee;
@@ -100,13 +103,77 @@
   display: inline-flex;
 }
 /* 수상메달 */
-.img-box{
+.img-box {
   display: flex;
   width: 100%;
   height: 100%;
-  translate: (-50% , -50%);
+  translate: (-50%, -50%);
 }
-.img-box img{
+.img-box img {
   width: 50%;
   height: 50%;
+}
+/* map*/
+.map {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(44, 51, 49);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+}
+/* map 이미지 */
+.map-left {
+  width: 20%;
+  height: 100%;
+  background-color: darkgreen;
+  padding: 20px;
+}
+.map-left img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+/* map 중간 */
+.map-center {
+  width: 55%;
+  height: 100%;
+  margin-left: 15px;
+  background-color: coral;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mc-up {
+  display: flex;
+}
+.mc-up p{
+  padding: 10px;
+}
+.mc-bt {
+  font-size: 13px;
+}
+.ft-br {
+  display: none;
+}
+/* map 오른쪽 */
+.map-right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background-color: darkgray;
+}
+.map-right img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.map-right .number {
+  margin-top: 50px;
+}
+.map .map-right p {
+  text-align: center;
+  margin-bottom: 10px;
 }
