@@ -1,0 +1,33 @@
+@charset "utf-8";
+@media screen and (max-width: 480px) {
+    .section-left{
+        display: none;
+    }
+    .section-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+  .sw-promotion-mobile {
+    display: block !important;
+  }
+  .sw-promotion-mobile .swiper-slide a img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  .sw-promotion{
+    display: none;
+  }
+  .header .menu li{
+    display: none;
+  }
+  .header .login{
+    display: none;
+  }
+  /* 브랜드 */
+  .brand a img{
+    width: 100%;
+    object-fit: cover;
+  }
+}

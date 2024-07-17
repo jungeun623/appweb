@@ -1,6 +1,6 @@
 @charset "uft-8";
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("responsive.css");
 
 * {
   margin: 0;
@@ -9,19 +9,19 @@
   list-style: none;
 }
 /* 공통 */
-.wrap{
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
+.wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
-li , p , span {
+/* li , p , span {
   font-family: "Do Hyeon", sans-serif;
-  /* font-weight: 100; */
+  font-weight: 100;
   font-style: normal;
   font-size: large;
-}
+} */
 /* 헤더 */
 .header {
   display: flex;
@@ -29,11 +29,11 @@ li , p , span {
   justify-content: space-evenly;
   width: 100%;
   height: 80px;
-  background-color: rgb(212, 212, 212);
 }
 .header a {
   display: block;
   width: 20%;
+  min-width: 100px;
   /* min-width: 170px; */
 }
 .header a img {
@@ -55,19 +55,25 @@ li , p , span {
   width: 10%;
   display: flex;
   gap: 10px;
-  padding: 0px 10px;
+  padding: 0px 3px;
 }
 /* 배너 슬라이드 */
 .sw-promotion {
   width: 100%;
 }
-.swiper-slide {
+.sw-promotion .swiper-slide {
   width: 100%;
 }
-.swiper-slide a img {
+.sw-promotion .swiper-slide a{
+  width: 100%;
+}
+.sw-promotion .swiper-slide a img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+.sw-promotion-mobile{
+  display: none;
 }
 /* 브랜드 */
 .brand {
@@ -75,10 +81,10 @@ li , p , span {
   height: 100%;
   text-align: center;
   padding: 50px;
-  background-color: rgb(247, 225, 255);
+  background-color: rgb(255, 216, 216);
   display: block;
 }
-.brand p{
+.brand p {
   padding: 10px;
 }
 .brand img {
@@ -88,7 +94,7 @@ li , p , span {
   left: 50%;
   right: 50%;
 }
-.brand a img{
+.brand a img {
   width: 100%;
   height: 100%;
 }
@@ -102,12 +108,11 @@ li , p , span {
 .section .section-right img {
   height: 100%;
   width: 100%;
-  transform: translate(-50% , -50%);
 }
-.section-left p{
+.section-left p {
   padding: 15px;
 }
-.b-top{
+.b-top {
   font-size: 40px;
 }
 /* 공지사항 */
@@ -127,27 +132,21 @@ li , p , span {
   height: 150px;
   margin: 20px 10px;
   display: inline-flex;
-}
-.box {
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
   padding: 15px;
 }
 
 /* 수상메달 */
-.img-box {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  translate: (-50%, -50%);
-  justify-content: space-around;
+.sw-medal{
   padding: 20px;
 }
-.img-box img {
-  width: 30%;
-  height: 30%;
+.sw-medal .swiper-wrapper .swiper-slide a{
+  width: 100%;
+  display: block;
+  background-color: azure;
+}
+.sw-medal .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  display: block;
 }
 /* map*/
 .map {
@@ -182,7 +181,7 @@ li , p , span {
 .mc-up {
   display: flex;
 }
-.mc-up p{
+.mc-up p {
   padding: 10px;
 }
 .mc-bt {
@@ -200,11 +199,11 @@ li , p , span {
   height: 100%;
   color: #fff;
 }
-.tel{
+.tel {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 .map-right img {
   width: 50px;
@@ -218,6 +217,6 @@ li , p , span {
   text-align: center;
   margin-bottom: 10px;
 }
-.icon{
+.icon {
   display: flex;
 }
