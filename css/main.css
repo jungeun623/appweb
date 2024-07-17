@@ -1,16 +1,32 @@
 @charset "uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
 * {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
   list-style: none;
 }
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+/* 공통 */
+.wrap{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
+li , p , span {
+  font-family: "Do Hyeon", sans-serif;
+  /* font-weight: 100; */
+  font-style: normal;
+  font-size: large;
+}
+/* 헤더 */
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 80px;
   background-color: rgb(212, 212, 212);
@@ -18,9 +34,9 @@ body {
 .header a {
   display: block;
   width: 20%;
-  min-width: 170px;
+  /* min-width: 170px; */
 }
-.header img {
+.header a img {
   width: 100%;
   padding: 10px;
 }
@@ -36,7 +52,7 @@ body {
   padding: 5px 10px;
 }
 .login {
-  width: 20%;
+  width: 10%;
   display: flex;
   gap: 10px;
   padding: 0px 10px;
@@ -62,27 +78,37 @@ body {
   background-color: rgb(247, 225, 255);
   display: block;
 }
+.brand p{
+  padding: 10px;
+}
 .brand img {
   margin: 10px;
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   left: 50%;
   right: 50%;
+}
+.brand a img{
+  width: 100%;
+  height: 100%;
 }
 /* 메뉴 */
 .section {
   width: 100%;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.section a {
-  width: 100%;
-}
-.section a img {
+.section .section-right img {
   height: 100%;
-  left: 50%;
-  right: 50%;
+  width: 100%;
+  transform: translate(-50% , -50%);
+}
+.section-left p{
+  padding: 15px;
+}
+.b-top{
+  font-size: 40px;
 }
 /* 공지사항 */
 .notice {
@@ -91,7 +117,7 @@ body {
   background-color: rgb(211, 211, 211);
   text-align: center;
   display: block;
-  padding: 20px;
+  padding: 30px;
 }
 .box {
   text-align: center;
@@ -99,25 +125,35 @@ body {
   border: 1px solid #eee;
   width: 150px;
   height: 150px;
-  margin: 10px 10px;
+  margin: 20px 10px;
   display: inline-flex;
 }
+.box {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  padding: 15px;
+}
+
 /* 수상메달 */
 .img-box {
   display: flex;
   width: 100%;
   height: 100%;
   translate: (-50%, -50%);
+  justify-content: space-around;
+  padding: 20px;
 }
 .img-box img {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
 }
 /* map*/
 .map {
   width: 100%;
   height: 100%;
-  background-color: rgb(44, 51, 49);
+  background-color: rgb(105, 107, 107);
   display: flex;
   justify-content: space-between;
   padding: 50px 30px;
@@ -126,7 +162,6 @@ body {
 .map-left {
   width: 20%;
   height: 100%;
-  background-color: darkgreen;
   padding: 20px;
 }
 .map-left img {
@@ -139,7 +174,7 @@ body {
   width: 55%;
   height: 100%;
   margin-left: 15px;
-  background-color: coral;
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -163,7 +198,13 @@ body {
   flex-direction: column;
   width: 20%;
   height: 100%;
-  background-color: darkgray;
+  color: #fff;
+}
+.tel{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end
 }
 .map-right img {
   width: 50px;
@@ -176,4 +217,7 @@ body {
 .map .map-right p {
   text-align: center;
   margin-bottom: 10px;
+}
+.icon{
+  display: flex;
 }
