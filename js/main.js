@@ -22,7 +22,6 @@ window.onload = function () {
       delay: 2500,
       disableOnInteraction: false,
     },
-   
     breakpoints: {
       480:{
         slidesPerView: 2,
@@ -30,19 +29,11 @@ window.onload = function () {
       }
     },
   });
+  const swPromotionB = new Swiper(".sw-promotion-mobile",{
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  })
 };
-// breakpoints: {
-//   480: {
-//     spaceBetween: 32,
-//     slidesPerView: 2,
-//     slidesPerGroup: 2,
-//     grid: {
-//       rows: 2,
-//     },
-//   },
-//   1280: {
-//     spaceBetween: 26,
-//     slidesPerView: 1,
-//     // slidesPerGroup: 3,
-//   },
-// },

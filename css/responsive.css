@@ -9,7 +9,7 @@
   .header .login {
     display: none;
   }
-  .header .menu{
+  .header .menu {
     display: none;
   }
   .brand a {
@@ -46,19 +46,19 @@
     webkit-box-orient: vertical;
     display: -webkit-box;
   }
-  .map .map-right{
+  .map .map-right {
     display: none;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .header .login .menu{
+  .header .login .menu {
     display: none;
   }
-  .header .menu{
+  .header .menu {
     display: none;
   }
-  .header a img{
+  .header a img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -100,7 +100,12 @@
     display: none;
   }
   /* 브랜드 */
-  .brand a img {
+  .brand {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .brand a {
     width: 100%;
     object-fit: cover;
   }
