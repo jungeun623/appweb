@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .header .login {
+    display: none;
+  }
   .section-left {
     display: none;
   }
@@ -57,6 +60,9 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .header .login {
+    display: none;
+  }
   .sw-promotion-mobile {
     display: block !important;
   }
