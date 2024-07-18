@@ -2,17 +2,24 @@
 @media screen and (max-width: 1280px) {
   .section .section-right-mobile {
     display: none;
-    max-width: 720px;
+    /* max-width: 720px; */
   }
 }
 @media screen and (max-width: 720px) {
   .header .login {
     display: none;
   }
+  .header .menu{
+    display: none;
+  }
+  .brand a {
+    width: 100%;
+    height: 100%;
+  }
   .section {
     width: 100%;
   }
-  .section .section-right img {
+  .section .section-right {
     display: none;
   }
   .section .section-left {
@@ -22,8 +29,8 @@
     display: flex;
     width: 100%;
   }
-  .section .section-right-mobile {
-    display: flex;
+  .section .section-right-mobile img {
+    /* display: flex; */
     width: 100%;
     height: 100%;
   }
@@ -45,16 +52,28 @@
 }
 
 @media screen and (max-width: 480px) {
-  .header .login {
+  .header .login .menu{
     display: none;
+  }
+  .header .menu{
+    display: none;
+  }
+  .header a img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
   .section-left {
     display: none;
   }
   .section-right {
     display: none;
+    width: 100%;
+    height: 100%;
   }
-  .section .section-right-mobile {
+  .section .section-right-mobile .mb-wrapper {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
   }
