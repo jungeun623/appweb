@@ -16,12 +16,12 @@
   max-width: 1280px;
   margin: 0 auto;
 }
-/* li , p , span {
+li , p , span {
   font-family: "Do Hyeon", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: large;
-} */
+}
 /* 헤더 */
 .header {
   display: flex;
@@ -136,6 +136,12 @@
   margin: 20px 10px;
   display: inline-flex;
   padding: 15px;
+}
+.notice .box {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: large;
 }
 /* 수상메달 */
 .sw-medal{
